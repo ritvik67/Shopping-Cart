@@ -1,0 +1,81 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200;300;400;600;700;900&display=swap');
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Source Sans Pro', sans-serif;
+}
+body{
+    width: 100%;
+    height: 100vh;
+    background-color: rgb(240, 239, 243);
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width :400px;
+    height: 520px;
+    background-color: #fff;
+    box-shadow: 4px 4px 30px rgba(0, 0, 0, 0.06);
+    border-radius: 12px;
+    padding: 20px;
+    overflow-y: scroll;
+}
+.container::-webkit-scrollbar{
+    display: none;
+}
+.container form{
+    width: 100%;
+    border: 2px solid;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row; 
+    align-items: center;
+}
+.container form input{
+    border: none;
+    outline: none;
+    box-shadow: none;
+    width: 100%;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 8px 10px;
+}
+.fa-search{
+    padding-left: 10px;
+}
+.product{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    padding-left: 10px ;   
+    padding-top: 20px;
+}
+.product-list{
+    padding:20px 10px ;
+    display: flex;
+    flex-direction: column;
+} 
+.product img{
+    width: 100px;
+    height: 100px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+.product .pdetails h2{
+    font-size: 20px;
+    color: #1d1d1d;
+    font-weight: 600;
+    padding: 0px 10px;
+}
+.product .pdetails h3{
+    font-size: 16px;
+    font-weight: 500;
+    padding: 00px 10px;
+}
+.product .pdetails{
+    padding-left: 15px; 
+}
